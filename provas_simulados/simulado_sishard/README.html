@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AF SIMULADO SisHard</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">AF SIMULADO SisHard</h1>
+</header>
+<!-- markdown_py README.md > README.html -->
+<!-- pandoc README.md -f markdown -t html -s -o README.html --metadata title="AF SIMULADO SisHard" -->
+<h1 id="prova-final---sistemas-hardware-software">Prova Final - Sistemas Hardware-Software</h1>
+<p>Neste prova iremos avaliar os objetivos de aprendizagem trabalhados na segunda metade do curso. Cada pasta contém os arquivos de uma questão da prova, incluindo arquivos <code>.c</code> para vocês colocarem suas soluções.</p>
+<hr />
+<h2 id="regras-da-prova">Regras da prova</h2>
+<style scoped>section { font-size: 20px; }</style>
+<ol type="1">
+<li>A prova é individual. São permitidas consultas a todos os materiais de aula, incluindo suas soluções a exercícios de aula e labs.</li>
+<li>Não é permitido consultar outras pessoas, sejam do Insper ou não, durante a prova.</li>
+<li>Esta prova também avalia fluência nos conceitos estudados.</li>
+<li>A prova terá duração de <code>três horas</code>, com início às <strong>15:00</strong> e término às <strong>18:00</strong>. Desconsidere o tempo do proctorio.</li>
+<li>A entrega da sua prova deverá ser feita via Blackboard. <strong>Não serão aceitas entregas por outros meios</strong>.</li>
+<li>O item de entrega permite múltiplas tentativas. Sempre que terminar uma questão faça uma entrega completa. Isto visa minimizar problemas com entregas atrasadas.</li>
+<li>Sua entrega consiste na pasta da prova inteira. Rezipe e entregue via Blackboard.</li>
+<li>Cada questão possui um arquivo específico para digitar sua entrega. Não altere o nome destes arquivos.</li>
+</ol>
+<hr />
+<h2 id="questão-1-25">Questão 1 (2,5)</h2>
+<style scoped>section { font-size: 20px; }</style>
+<p>A figura <em>q1/sincronizacao.png</em> ilustra as relações de dependência entre as partes das funções <code>thread1, thread2, thread3</code> e <code>thread4</code>, mostrando que algumas delas poderiam ser feitas de maneira concorrente.</p>
+<p><img src="q1/sincronizacao.png" /></p>
+<p>Seu trabalho nesta questão será:</p>
+<ol type="1">
+<li>criar threads para execução concorrente das funções (40%)</li>
+<li>usar semáforos para que a ordem dos prints das partes das tarefas respeitem o diagrama da figura (60%)</li>
+</ol>
+<p><strong>OBS</strong>:</p>
+<ul>
+<li><p>Você não deve introduzir novas dependências. Ou seja, se seu programa criar relações de dependência além das da figura seu trabalho valerá no máximo 50%.</p></li>
+<li><p>Não altere os <code>printf</code> existentes, nem adicione novos.</p></li>
+</ul>
+<hr />
+<h2 id="questão-2-25">Questão 2 (2,5)</h2>
+<style scoped>section { font-size: 20px; }</style>
+<p>Acabaram de lançar uma nova criptomoeda chamada <strong>SisCoin</strong>! Nela, a transferência de valores é feita utilizando um executável <code>siscoin</code>, cujo código não está disponível.</p>
+<p>Para realizar uma transferência, podemos executar no terminal, por exemplo, o comando:</p>
+<p><code>./siscoin abc123 def456 25.1</code></p>
+<p>No exemplo, estamos tentando transferir <code>25.1</code> <strong>SisCoins</strong> da carteira origem <code>abc123</code> para a carteira de destino <code>def456</code></p>
+<p>Se você não é um entusiasta das criptomoedas, pense nas carteiras como contas bancárias de origem e destino!</p>
+<p>O comportamento do retorno (<code>return</code>) do programa <code>./siscoin</code> é:</p>
+<ul>
+<li><p>Quando o valor de transferência é <strong>negativo</strong> ou a <strong>quantidade de parâmetros está incorreta</strong>, ele retorna <strong>-1</strong></p></li>
+<li><p>Quando uma transferência é <strong>bem sucedida</strong>, ele retorna <strong>0</strong></p></li>
+<li><p>Quando ocorre uma <strong>falha na rede</strong>, ele retorna um valor inteiro de <strong>1</strong> a <strong>4</strong> (inclusive)</p></li>
+</ul>
+<p>Ultimamente a rede da <code>SisCoin</code> anda um pouco instável e por muitas vezes as transferências não são realizadas. Se você tentar novamente, pode ser que consiga transferir, mas vamos fazer melhor!</p>
+<p>Uma tarefa comum em programação de sistemas é <strong>integrar com outros programas</strong> instalados.</p>
+<p>Seu trabalho nesta questão será desenvolver um programa <code>q2</code> em <em>C</em> (altere o arquivo <code>q2.c</code>) que recebe três parâmetros pelo terminal: <strong>carteira de origem</strong>, <strong>carteira de destino</strong> e <strong>valor</strong>.</p>
+<p>Você deve realizar um fork e chamar o executável <code>./siscoin</code> <strong>repetidamente</strong> até que a transferência consiga ser realizada (até que <code>siscoin</code> retorne <strong>0</strong>).</p>
+<p>Exemplo de chamada do seu programa no padrão <code>./q2 &lt;origem&gt; &lt;destino&gt; &lt;valor&gt;</code>: <code>./q2 2uyoh 2hjlkj 19.8</code></p>
+<p><strong>Atenção</strong>:</p>
+<ul>
+<li>O executável <code>siscoin</code> também tem a chamada no padrão <code>./siscoin &lt;origem&gt; &lt;destino&gt; &lt;valor&gt;</code></li>
+</ul>
+<p><strong>OBS</strong>:</p>
+<ul>
+<li><p>Trabalhe no arquivo <code>q2.c</code> e complete as partes faltantes</p></li>
+<li><p>Compile com <code>gcc -g q2.c -o q2</code></p></li>
+<li><p>Deixei um arquivo executável <code>q2_ref</code> que exemplifica o comportamento desejado do programa final. Teste, por exemplo, com <code>./q2_ref abc1 def2 19.5</code> e utilize como referência!</p></li>
+<li><p>O executável <code>siscoin</code> não está realizando nenhuma conexão com a rede! É apenas uma simulação!</p></li>
+<li><p>O executável <code>siscoin</code> tem comportamento aleatório, então as vezes irá demorar mais para conseguir transferir</p></li>
+<li><p>Você não precisa se preocupar com os parâmetros das carteiras, pode ser qualquer string! O siscoin valida apenas o 4º parâmetro (valor), além da quantidade de parâmetros</p></li>
+</ul>
+<p><strong>Nesta questão você deverá usar as funções de gerenciamento de processos e chamada de executáveis vistas em aula. Você não pode usar <code>system</code>.</strong></p>
+<hr />
+<h2 id="questão-3-25">Questão 3 (2,5)</h2>
+<style scoped>section { font-size: 20px; }</style>
+<p>Abra o arquivo <code>q3.c</code>!</p>
+<p>Você sabia que o valor de <span class="math inline"><em>π</em></span> pode ser aproximado por simulação?! No arquivo <code>q3.c</code>, a função <code>aproxima_pi()</code> busca fazer exatamente isto. Ela sempre guarda o último valor calculado para <span class="math inline"><em>π</em></span> em uma variável global chamada <code>pi</code>.</p>
+<p>O problema é que o programa roda em laço infinito! Ele nunca para e nunca produz uma resposta.</p>
+<p>Sua tarefa neste exercício é:</p>
+<ul>
+<li><p>Exibir o PID do processo (<strong>10% da nota</strong>)</p></li>
+<li><p>Alterar o programa para que quando o processo receber um sinal <strong>SIGINT</strong> (o mesmo enviado quando o usuário aperta CTRL+C no terminal), dar um printf no valor atual da variável global <code>pi</code> e encerrar o processo (<strong>60% da nota</strong>)</p></li>
+<li><p>Além do item acima, ao receber <strong>SIGINT</strong>, salvar o valor atual da variável global <code>pi</code> em formato de texto em um arquivo <code>pi.txt</code> antes de encerrar o processo (<strong>30% da nota</strong>)</p></li>
+</ul>
+<p><strong>OBS</strong>:</p>
+<ul>
+<li><p>Você deve criar uma função para ser o handler do <strong>SIGINT</strong></p></li>
+<li><p>O Handler deve ser registrado na main</p></li>
+<li><p>Para os arquivos, utilize APENAS as chamadas vistas em aula: open, close, read, write. Não pode utilizar fopen por exemplo</p></li>
+</ul>
+<hr />
+<h2 id="questão-4-25">Questão 4 (2,5)</h2>
+<p>Neste exercício, o programa <code>q4</code> recebe como argumento da linha de comando <strong>uma quantidade máxima de threads</strong> executando por vez e o <strong>nome de um arquivo</strong>. Sua tarefa é fazer uma classificação de palavras em <strong>threads</strong> que chamam a função <code>classifier_thread</code>.</p>
+<p>Exemplo de como seu programa <code>q4</code> será chamado:</p>
+<pre><code>./q2 2 arquivo.txt</code></pre>
+<p>onde <code>2</code> é a quantidade máxima de threads que podem executar ao mesmo tempo e <code>arquivo.txt</code> é o arquivo que contem em cada linhas palavras a serem classificadas/processadas pelas threads.</p>
+<p>Exemplo de conteúdo do <code>arquivo.txt</code>:</p>
+<pre><code>banana
+feliz
+chato
+parangaricutirimirruaro
+harrypotter
+arespostaeh42</code></pre>
+<p>A função <code>classifier_thread</code> retorna na struct de argumentos valores de <code>0</code> a <code>2</code>, inclusive. Estes valores representam a classificação da palavra.</p>
+<p>Suas tarefas:</p>
+<ul>
+<li><p>Programar a função <code>char *read_line(int fd)</code>. Considere que o arquivo já está aberto. Para ler, é obrigatório utilizar apenas a chamada <code>read</code>. (<strong>30% da nota</strong>)</p></li>
+<li><p>Preencher o restante da main para (<strong>20% da nota</strong>):</p>
+<ul>
+<li><p>Esperar as threads terminarem</p></li>
+<li><p>Contar a quantidade de palavras em cada classe e exibir mensagem na saída padrão</p></li>
+</ul></li>
+<li><p>Fazer alterações na main e na função <code>classifier_thread</code> para que as threads executem respeitando a <strong>quantidade máxima de threads</strong> (as threads serão criadas, mas na hora de executar, deverão esperar sua vez) (<strong>30% da nota</strong>).</p></li>
+<li><p>Programa passa no valgrind sem erros. (<strong>20% da nota</strong>, apenas se resolveu corretamente)</p></li>
+</ul>
+<p><strong>Atenção</strong>:</p>
+<ul>
+<li>Imprima EXATAMENTE conforme solicitado, sem deixar espaços antes ou depois das frases. Dê apenas um <code>\n</code> ao final.</li>
+</ul>
+<p>Exemplo de conteúdo do <code>arquivo.txt</code> (este nome é variável):</p>
+<pre><code>mentirasa
+audiofone
+pulso
+mysql
+ferias
+banana
+feliz
+chato
+parangaricutirimirruaro
+harrypotter
+arespostaeh42
+</code></pre>
+<p>Exemplo de Saída:</p>
+<pre><code>CRIOU THREAD 00 PARA PROCESSAR A PALAVRA mentirasa
+CRIOU THREAD 01 PARA PROCESSAR A PALAVRA audiofone
+CRIOU THREAD 02 PARA PROCESSAR A PALAVRA pulso
+CRIOU THREAD 03 PARA PROCESSAR A PALAVRA mysql
+CRIOU THREAD 04 PARA PROCESSAR A PALAVRA ferias
+CRIOU THREAD 05 PARA PROCESSAR A PALAVRA banana
+CRIOU THREAD 06 PARA PROCESSAR A PALAVRA feliz
+CRIOU THREAD 07 PARA PROCESSAR A PALAVRA chato
+CRIOU THREAD 08 PARA PROCESSAR A PALAVRA parangaricutirimirruaro
+CRIOU THREAD 09 PARA PROCESSAR A PALAVRA harrypotter
+CRIOU THREAD 10 PARA PROCESSAR A PALAVRA arespostaeh42
+THREAD 00 TERMINOU COM O RESULTADO 2
+THREAD 01 TERMINOU COM O RESULTADO 1
+THREAD 02 TERMINOU COM O RESULTADO 0
+THREAD 03 TERMINOU COM O RESULTADO 0
+THREAD 04 TERMINOU COM O RESULTADO 2
+THREAD 05 TERMINOU COM O RESULTADO 1
+THREAD 06 TERMINOU COM O RESULTADO 2
+THREAD 07 TERMINOU COM O RESULTADO 0
+THREAD 08 TERMINOU COM O RESULTADO 0
+THREAD 09 TERMINOU COM O RESULTADO 0
+THREAD 10 TERMINOU COM O RESULTADO 2
+RESULTADO:
+TOTAL CLASSE 0: 5
+TOTAL CLASSE 1: 2
+TOTAL CLASSE 2: 4
+</code></pre>
+<p><strong>OBS</strong>:</p>
+<ul>
+<li><p>Trabalhe no arquivo <code>q4.c</code> e complete as partes faltantes</p></li>
+<li><p>Compile com <code>gcc -g q4.c -o q4 -pthread</code></p></li>
+<li><p>Faça seus próprios arquivos de teste personalizados!</p></li>
+</ul>
+</body>
+</html>
